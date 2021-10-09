@@ -8,30 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Tienda Web/Ventas</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <il> <a href="./ventas">Ventas</a></il>
-            <il> <a href="./usuarios">Usuarios</a></il>
-            <il> <a href="./clientes">Clientes</a></il>
-            <il> <a href="./proveedores">Proveedores</a></il>
-            <il> <a href="./productos">Productos</a></il>
-        </ul>
-    </nav>
-    <div class="container">
-        <h1>Gesti&oacuten de ventas</h1>
-
-        <div class="form">
-            <form action="#">
-                <div>
-                    <label for=""></label>
-                    <input type="text" value="">
-                </div>
-            </form>
-        </div>
+    <h1>Bienvenidos a tienda Grupo G</h1>
+    <div>
+        <form>
+            <!-- Usuario-->
+            <label>Usuario</label>
+            <input type="name">
+            <br></br>
+            <!-- Contraseña -->
+            <label>Contraseña</label>
+            <input type="password">
+            <br></br>
+            <div>
+                <!-- Botones -->
+                <input type="submit" value="Aceptar">
+                <input type="button" value="Cancelar">
+                <p><a href="#">Olvido su contraseña?</a>
+            </div>
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"

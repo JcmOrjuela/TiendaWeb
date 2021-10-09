@@ -1,0 +1,71 @@
+:root {
+    --primary: #fa4887;
+    --secondary: #883ADF;
+}
+
+body{
+    margin: 0;
+    background-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--primary);
+}
+
+nav {
+    background-color: var(--primary);
+    padding: 0.5em 0.5em 0.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 1.5em;
+    font-size:20px;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: var(--secondary);
+    text-shadow: 2px 2px 1px white;
+}
+
+.container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-primary:hover{
+    background-color: var(--secondary);
+    box-shadow: 1px 1px 3px 3px var(--secondary);
+}
+
+.btn-secondary{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+.btn-secondary:hover{
+    background-color: var(--primary);
+    box-shadow: 1px 1px 3px 3px var(--primary);
+}
+
+.form-control:focus{
+    border-color: var(--primary);
+    box-shadow: 1px 1px 3px 3px var(--primary);
+}
+label{
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: var(--secondary);
+}
