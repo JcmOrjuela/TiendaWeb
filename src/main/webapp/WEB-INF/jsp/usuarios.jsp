@@ -29,6 +29,40 @@
                 <span>Nuevo</span>
             </button>
         </div>
+
+        <div class="mt-5">
+            <table class="table table-striped table-responsive">
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Correo ELectronico</th>
+                        <th>Usuarios</th>
+                        <th>Contraseña</th>
+                        <th>Usuario</th>
+                        <th>Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="flex">
+                                <button class="btn btn-danger">
+                                    <img src="https://img.icons8.com/ios-filled/30/ffffff/delete-user-male.png"/>
+                                </button>
+                                <button class="btn btn-secondary">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/edit-user-male.png"/>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- Modal -->
@@ -41,7 +75,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="./usuarios" method="get" class="form">
+                    <form action="./usuarios/guardar" method="get">
                         <div>
                             <label class="form-label" for="">Documento de indentidad:</label>
                             <input type="text" placeholder="Documento de indentidad" class="form-control"
