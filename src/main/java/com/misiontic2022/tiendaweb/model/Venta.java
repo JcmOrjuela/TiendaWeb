@@ -12,7 +12,6 @@ public class Venta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String items;
     private String customer;
     private int total;
     private int discount;

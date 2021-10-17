@@ -13,8 +13,8 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String email;
-    private String password;
+    private String email = "admin@mintic.com";
+    private String password = "123456";
     private String phone;
     private String document;
     private String docType;

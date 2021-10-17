@@ -19,8 +19,10 @@
                     <a class="navbar-brand d-flex justify-content" href="javascript:void(0)">
                         <h3 class="text-white">LOGO TIENDAWEB</h3>
                         <a href="/"><img
-                                src="https://img.icons8.com/external-sbts2018-outline-sbts2018/20/ffffff/external-logout-social-media-sbts2018-outline-sbts2018.png" /></a>
-                    </a>
+                                src="https://img.icons8.com/external-sbts2018-solid-sbts2018/30/ffffff/external-logout-social-media-sbts2018-solid-sbts2018.png" />
+                            <span class="text-white">Salir</span>
+
+                        </a>
                 </div>
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link h5" href="ventas">Ventas</a></li>
@@ -37,7 +39,7 @@
     <div class="container mt-3">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#salesModal">
-            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/add-user-male.png" />
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/add--v2.png" />
             Nuevo
         </button>
 
@@ -46,9 +48,7 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Items</th>
                         <th>Cliente</th>
-                        <th>Nombre</th>
                         <th>Descuentos</th>
                         <th>Total Venta</th>
                         <th>Acciones</th>
@@ -57,19 +57,17 @@
                 <tbody>
                     <tr th:each="venta:${ventax}">
                         <td th:text="${venta.id}"></td>
-                        <td th:text="${venta.document}"></td>
-                        <td th:text="${venta.docType}"></td>
-                        <td th:text="${venta.name}"></td>
-                        <td th:text="${venta.email}"></td>
-                        <td th:text="${venta.phone}"></td>
+                        <td th:text="${venta.customer}"></td>
+                        <td th:text="${venta.discount}"></td>
+                        <td th:text="${venta.total}"></td>
                         <td>
                             <a th:href="@{ventas/delete}"></a>
                             <a class="btn btn-danger" th:href="@{ventas/delete/}+${venta.id}">
-                                <img src="https://img.icons8.com/ios/30/ffffff/delete-user-male.png" />
+                                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/trash--v1.png" />
                             </a>
                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                 data-bs-target="#userModal">
-                                <img src="https://img.icons8.com/ios-filled/30/ffffff/edit-user-male.png" />
+                                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/edit--v4.png" />
                             </button>
                         </td>
                     </tr>
@@ -94,13 +92,23 @@
                                 </div>
                                 <div class="mb-3 mx-5">
                                     <label fclass="form-label">Cliente</label>
-                                    <input type="text" name="customer" class="form-control"
-                                        placeholder="Id Cliente" required>
+                                    <input type="text" name="customer" class="form-control" placeholder="Id Cliente"
+                                        required>
                                 </div>
-                                
+                                <div class="mb-3 mx-5">
+                                    <label fclass="form-label">Descuentos</label>
+                                    <input type="number" name="discount" class="form-control" placeholder="Id Cliente"
+                                        required>
+                                </div>
+                                <div class="mb-3 mx-5">
+                                    <label fclass="form-label">Total venta</label>
+                                    <input type="number" name="total" class="form-control" placeholder="Id Cliente"
+                                        required>
+                                </div>
+
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-  bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-danger" data- bs-dismiss="modal">Cancelar</button>
                                 <button type="submit" class="btn btn-primary">Agregar</button>
                             </div>
                         </form>
